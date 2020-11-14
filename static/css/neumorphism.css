@@ -22499,4 +22499,34 @@ article a {
 .tooltip-inner {
   box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF; }
 
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1; }
+  .hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px; }
+  .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: black;
+    background-color: #e6e7ee; }
+
+.checked {
+  color: #F0B400; }
+
 /*# sourceMappingURL=neumorphism.css.map */
