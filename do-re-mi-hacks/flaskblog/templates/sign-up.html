@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>Neumorphism UI - Signin</title>
+<title>Neumorphism UI - Signup</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="title" content="Neumorphism UI - Signin">
+<meta name="title" content="Neumorphism UI - Signup">
 <meta name="author" content="_____ team">
 
 <!-- Fontawesome -->
@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 <!-- Pixel CSS -->
-<link type="text/css" href="../../css/neumorphism.css" rel="stylesheet">
+<link type="text/css" href="../static/css/neumorphism.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,10 +25,10 @@
             <div class="col-12 col-md-8 col-lg-6 justify-content-center">
               <div class="card bg-primary shadow-soft border-light p-4">
                 <div class="card-header text-center pb-0">
-                  <h2 class="h4">Sign in</h2>
+                  <h2 class="mb-0 h5">Create Account</h2>
                 </div>
                 <div class="card-body">
-                  <form action="#" class="mt-4">
+                  <form action="#">
                     <!-- Form -->
                     <div class="form-group">
                       <label for="email">Your email</label>
@@ -52,7 +52,7 @@
                     <div class="form-group">
                       <!-- Form -->
                       <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="exampleInputPassword7">Password</label>
                         <div class="input-group mb-4">
                           <div class="input-group-prepend">
                             <span class="input-group-text"
@@ -71,38 +71,58 @@
                         </div>
                       </div>
                       <!-- End of Form -->
-                      <div
-                        class="d-block d-sm-flex justify-content-between align-items-center mb-4"
-                      >
-                        <div class="form-check">
+                      <!-- Form -->
+                      <div class="form-group">
+                        <label for="confirmPassword"
+                          >Confirm Password</label
+                        >
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><span class="fas fa-unlock-alt"></span
+                            ></span>
+                          </div>
                           <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="remember"
-                            name="remember"
+                            class="form-control"
+                            id="confirmPassword"
+                            placeholder="Confirm password"
+                            type="password"
+                            aria-label="Password"
+                            required
                           />
-                          <label class="form-check-label" for="remember">
-                            Remember me
-                          </label>
                         </div>
-                        <div>
-                          <a href="#" class="small text-right"
-                            >Lost password?</a
-                          >
-                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="my-1 mr-2" for="Role">Role</label>
+                        <select class="custom-select my-1 mr-sm-2" id="Role">
+                            <option selected>Choose...</option>
+                            <option value="1">Musician</option>
+                            <option value="2">Company</option>
+                        </select>
+                    </div>
+                      <!-- End of Form -->
+                      <div class="form-check mb-4">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck6"
+                        />
+                        <label class="form-check-label" for="defaultCheck6">
+                          I agree to the <a href="#">terms and conditions</a>
+                        </label>
                       </div>
                     </div>
                     <button type="submit" class="btn btn-block btn-primary">
-                      Sign in
+                      Sign up
                     </button>
                   </form>
                   <div
                     class="d-block d-sm-flex justify-content-center align-items-center mt-4"
                   >
                     <span class="font-weight-normal">
-                      Not registered?
-                      <a href="./sign-up.html" class="font-weight-bold">Create account</a>
+                      Already have an account?
+                      <a href="./sign-in.html" class="font-weight-bold">Login here</a>
                     </span>
                   </div>
                 </div>
@@ -114,23 +134,23 @@
     </main>
 
     <!-- Core -->
-<script src="../../vendor/jquery/dist/jquery.min.js"></script>
-<script src="../../vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../../vendor/headroom.js/dist/headroom.min.js"></script>
+<script src="../static/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../static/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../static/vendor/headroom.js/dist/headroom.min.js"></script>
 
 <!-- Vendor JS -->
-<script src="../../vendor/onscreen/dist/on-screen.umd.min.js"></script>
-<script src="../../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="../../vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="../../vendor/jarallax/dist/jarallax.min.js"></script>
-<script src="../../vendor/jquery.counterup/jquery.counterup.min.js"></script>
-<script src="../../vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
-<script src="../../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="../static/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="../static/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="../static/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="../static/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="../static/vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="../static/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="../static/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- Neumorphism JS -->
-<script src="../../assets/js/neumorphism.js"></script>
+<script src="../static/assets/js/neumorphism.js"></script>
   </body>
 </html>
