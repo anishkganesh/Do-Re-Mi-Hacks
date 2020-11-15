@@ -22529,4 +22529,11 @@ article a {
 .checked {
   color: #F0B400; }
 
+.img-card-bottom {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100px; }
+
 /*# sourceMappingURL=neumorphism.css.map */
