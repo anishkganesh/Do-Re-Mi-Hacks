@@ -21,7 +21,7 @@ class User(db.Model, UserMixin):   # creates a User database model
     # defines the one to many relationship of a user to his/her posts
     # the author attribute is used to get the details of the user who created the post, from a post itself
     # the lazy argument means that SQLAlchemy will load all the data (posts) of a user in one go
-    Event = db.relationship('Post', backref='author', lazy=True)
+    Event = db.relationship('Event', backref='author', lazy=True)
 
     # how the object is printed
     def __repr__(self):

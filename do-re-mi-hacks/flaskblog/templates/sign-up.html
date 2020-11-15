@@ -3,7 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>Neumorphism UI - Signup</title>
+{% if title %}
+        <title>GigFinder - {{ title }}</title>
+    {% else %}
+        <title>GigFinder</title>
+    {% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="title" content="Neumorphism UI - Signup">
 <meta name="author" content="_____ team">
@@ -28,7 +32,7 @@
                   <h2 class="mb-0 h5">Create Account</h2>
                 </div>
                 <div class="card-body">
-                  <form action="#">
+                  <form method="POST" action="">
                     <!-- Form -->
                     <div class="form-group">
                       <label for="email">Your email</label>
@@ -38,14 +42,7 @@
                             ><span class="fas fa-envelope"></span
                           ></span>
                         </div>
-                        <input
-                          class="form-control"
-                          id="email"
-                          placeholder="someone@company.com"
-                          type="text"
-                          aria-label="email adress"
-                          name="email"
-                        />
+                        {{ form.email(class="form-control form-control-lg") }}
                       </div>
                     </div>
                     <!-- End of Form -->
@@ -59,15 +56,7 @@
                               ><span class="fas fa-unlock-alt"></span
                             ></span>
                           </div>
-                          <input
-                            class="form-control"
-                            id="password"
-                            placeholder="Password"
-                            type="password"
-                            aria-label="Password"
-                            name="password"
-                            required
-                          />
+                           {{ form.password(class="form-control form-control-lg") }}
                         </div>
                       </div>
                       <!-- End of Form -->
@@ -82,23 +71,14 @@
                               ><span class="fas fa-unlock-alt"></span
                             ></span>
                           </div>
-                          <input
-                            class="form-control"
-                            id="confirmPassword"
-                            placeholder="Confirm password"
-                            type="password"
-                            aria-label="Password"
-                            required
-                          />
+                          {{ form.confirm_password(class="form-control form-control-lg") }}
                         </div>
                       </div>
+                      <label for="role"
+                          >Role</label
+                        >
                       <div class="form-group">
-                        <label class="my-1 mr-2" for="Role">Role</label>
-                        <select class="custom-select my-1 mr-sm-2" id="Role">
-                            <option selected>Choose...</option>
-                            <option value="1">Musician</option>
-                            <option value="2">Company</option>
-                        </select>
+                        {{ form.role(class="form-control form-control-lg") }}
                     </div>
                       <!-- End of Form -->
                       <div class="form-check mb-4">
@@ -113,16 +93,16 @@
                         </label>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-block btn-primary">
-                      Sign up
-                    </button>
+                    <div class="form-group">
+                      {{ form.submit(class="btn btn-block btn-primary") }}
+                    </div>
                   </form>
                   <div
                     class="d-block d-sm-flex justify-content-center align-items-center mt-4"
                   >
                     <span class="font-weight-normal">
                       Already have an account?
-                      <a href="./sign-in.html" class="font-weight-bold">Login here</a>
+                      <a href="{{url_for('login')}}" class="font-weight-bold">Login here</a>
                     </span>
                   </div>
                 </div>
